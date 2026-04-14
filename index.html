@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shyam Prasath S — Graphic & Product Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&family=Cabinet+Grotesk:wght@300;400;500;700;800&family=Caveat:wght@400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div id="bar"></div>
+  <div id="cf">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+      <path d="M4.32 1.94L20.89 8.57C21.94 8.99 21.96 10.45 20.94 10.9L14.73 13.63C14.47 13.74 14.26 13.95 14.15 14.21L11.42 20.42C10.97 21.44 9.51 21.42 9.09 20.37L2.46 3.8C2.01 2.68 3.2 1.49 4.32 1.94Z" fill="var(--teal)" stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mob" id="mob">
+    <a href="#about" onclick="cm()">About</a>
+    <a href="#skills" onclick="cm()">Skills</a>
+    <a href="#experience" onclick="cm()">Experience</a>
+    <a href="#projects" onclick="cm()">Projects</a>
+    <a href="#leadership" onclick="cm()">Leadership</a>
+    <a href="#contact" onclick="cm()">Contact</a>
+  </div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="n-logo">Shyam<span>.</span></div>
+    <div class="n-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#leadership">Leadership</a>
+    </div>
+    <a href="#contact" class="n-btn">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+        <polyline points="22,6 12,13 2,6" />
+      </svg>
+      Say Hello
+    </a>
+    <button class="hbg" onclick="document.getElementById('mob').classList.toggle('open')">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6" />
+        <line x1="3" y1="12" x2="21" y2="12" />
+        <line x1="3" y1="18" x2="21" y2="18" />
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" style="width: 100vw; height: 100vh; overflow: hidden; position: relative;">
+    <div class="h-bg-text">
+       <h1 class="giant-portfolio">Portfolio</h1>
+       <div class="subtitle-row">
+         <span class="pink-script">Shyam Prasath</span>
+         <span class="pink-script">Graphic Designer</span>
+       </div>
+    </div>
+  </section>
+
+  <hr class="div" />
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <span class="eyebrow rv">A little about me</span>
+    <h2 class="stitle rv d1">Crafting stories<br>through <em>design</em></h2>
+    <div class="ag">
+      <div class="at">
+        <p class="rv d1">I'm <strong>Shyam Prasath S</strong>, a graphic and product designer passionate about bridging
+          the gap between visual beauty and meaningful function. My journey in design started with a fascination for how
+          a single image can tell a thousand stories.</p>
+        <p class="rv d2">Today, I work at the intersection of <strong>brand identity, UI/UX, and motion design</strong>
+          — creating experiences that don't just look good, but feel right. I believe great design is invisible: it
+          guides, it communicates, and it connects.</p>
+        <p class="rv d3">Whether building a product interface from scratch or crafting a visual campaign, I approach
+          every project with curiosity, intention, and a relentless eye for detail.</p>
+        <div class="a-stats">
+          <div class="astat rv d2">
+            <div class="an">2+</div>
+            <div class="al">Years Experience</div>
+          </div>
+          <div class="astat rv d3">
+            <div class="an">20+</div>
+            <div class="al">Projects Done</div>
+          </div>
+          <div class="astat rv d4">
+            <div class="an">3</div>
+            <div class="al">Industries</div>
+          </div>
+          <div class="astat rv d5">
+            <div class="an">100%</div>
+            <div class="al">Passion</div>
+          </div>
+        </div>
+      </div>
+      <div class="av">
+        <div class="apill rv d1">
+          <div class="ap-dot"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5z" />
+              <path d="M2 17l10 5 10-5" />
+              <path d="M2 12l10 5 10-5" />
+            </svg></div>
+          <div>
+            <div class="ap-lbl">Specialty</div>
+            <div class="ap-val">Brand &amp; Product Design</div>
+          </div>
+        </div>
+        <div class="apill rv d2">
+          <div class="ap-dot"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3" />
+            </svg></div>
+          <div>
+            <div class="ap-lbl">Also skilled in</div>
+            <div class="ap-val">Motion &amp; Video Design</div>
+          </div>
+        </div>
+        <div class="apill rv d3">
+          <div class="ap-dot"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <path d="M9 9h6M9 12h6M9 15h4" />
+            </svg></div>
+          <div>
+            <div class="ap-lbl">Tools of choice</div>
+            <div class="ap-val">Figma · Adobe Suite · DaVinci</div>
+          </div>
+        </div>
+        <div class="apill rv d4">
+          <div class="ap-dot"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg></div>
+          <div>
+            <div class="ap-lbl">Available for</div>
+            <div class="ap-val">Freelance &amp; Full-time Roles</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="div" />
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <span class="eyebrow rv">What I do</span>
+    <h2 class="stitle rv d1">My <em>skill set</em></h2>
+    <div class="sg">
+      <div class="sk rv d1">
+        <div class="sk-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.75">
+            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+            <path d="M2 17l10 5 10-5" />
+            <path d="M2 12l10 5 10-5" />
+          </svg></div>
+        <h3>Design</h3>
+        <ul>
+          <li>Brand Identity &amp; Visual Design</li>
+          <li>Typography &amp; Layout Systems</li>
+          <li>Poster &amp; Print Design</li>
+          <li>Illustration &amp; Icon Design</li>
+          <li>Color Theory &amp; Composition</li>
+        </ul>
+      </div>
+      <div class="sk rv d2">
+        <div class="sk-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.75">
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path d="M9 9h6M9 12h6M9 15h4" />
+          </svg></div>
+        <h3>UI / UX</h3>
+        <ul>
+          <li>User Interface Design</li>
+          <li>Wireframing &amp; Prototyping</li>
+          <li>Design Systems</li>
+          <li>User Research &amp; Journey Mapping</li>
+          <li>Responsive &amp; Mobile Design</li>
+        </ul>
+      </div>
+      <div class="sk rv d3">
+        <div class="sk-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.75">
+            <polygon points="5 3 19 12 5 21 5 3" />
+          </svg></div>
+        <h3>Motion &amp; Video</h3>
+        <ul>
+          <li>Motion Graphics &amp; Animation</li>
+          <li>Video Editing &amp; Color Grading</li>
+          <li>Intro &amp; Outro Design</li>
+          <li>Social Media Reels &amp; Shorts</li>
+          <li>Kinetic Typography</li>
+        </ul>
+      </div>
+      <div class="sk rv d4">
+        <div class="sk-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.75">
+            <rect x="2" y="3" width="20" height="14" rx="2" />
+            <path d="M8 21h8M12 17v4" />
+          </svg></div>
+        <h3>Software</h3>
+        <ul>
+          <li>Figma &amp; FigJam</li>
+          <li>Adobe Photoshop &amp; Illustrator</li>
+          <li>Premiere Pro &amp; After Effects</li>
+          <li>Canva &amp; DaVinci Resolve</li>
+          <li>Notion &amp; Linear</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr class="div" />
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience">
+    <span class="eyebrow rv">Where I've worked</span>
+    <h2 class="stitle rv d1">Work <em>experience</em></h2>
+    <div class="tl">
+      <div class="ti rv d2">
+        <div class="ti-dot"></div>
+        <div class="ti-date">Dec 2025 — Present</div>
+        <div class="ti-role">Graphic &amp; Product Designer</div>
+        <div class="ti-co">Shortfundly</div>
+        <ul>
+          <li>Designing end-to-end product interfaces and visual assets for a short film streaming platform.</li>
+          <li>Building and maintaining a cohesive design system that scales across web and mobile touchpoints.</li>
+          <li>Collaborating cross-functionally to translate complex requirements into elegant, user-centric designs.
+          </li>
+          <li>Creating motion graphics and social media content to elevate brand presence across digital channels.</li>
+        </ul>
+      </div>
+      <div class="ti rv d3">
+        <div class="ti-dot"></div>
+        <div class="ti-date">Aug 2024 — Nov 2024</div>
+        <div class="ti-role">Graphic Designer</div>
+        <div class="ti-co">Maai Spectrum Prints</div>
+        <ul>
+          <li>Produced high-quality print-ready designs: brochures, banners, packaging, and promotional materials.</li>
+          <li>Worked closely with clients to develop visual identities aligned with their brand values.</li>
+          <li>Managed multiple design projects simultaneously with precision in file preparation and production
+            standards.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr class="div" />
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <span class="eyebrow rv">Selected work</span>
+    <h2 class="stitle rv d1">Featured <em>projects</em></h2>
+    <div class="pg">
+      <div class="pc rv d2">
+        <div class="pa">
+          <svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <rect width="500" height="200" fill="#1b2a2e" />
+            <circle cx="76" cy="100" r="66" fill="none" stroke="#2d7d6f" stroke-width="1" opacity="0.4" />
+            <circle cx="76" cy="100" r="42" fill="none" stroke="#2d7d6f" stroke-width=".6" opacity="0.3" />
+            <circle cx="76" cy="100" r="18" fill="#2d7d6f" opacity="0.15" />
+            <path d="M134 56 L192 100 L134 144" fill="none" stroke="#3a9e8d" stroke-width="1" opacity="0.3" />
+            <text x="210" y="84" font-family="Georgia,serif" font-size="28" fill="#f0ece3" opacity="0.78"
+              font-weight="bold">A.R.T.B</text>
+            <text x="210" y="108" font-family="sans-serif" font-size="9" fill="#3a9e8d" opacity="0.6"
+              letter-spacing="3.5">AI MULTI TERRAIN BOT</text>
+            <path d="M390 36 L448 100 L390 164 L332 100 Z" fill="none" stroke="#3a9e8d" stroke-width=".8"
+              opacity="0.25" />
+            <circle cx="390" cy="100" r="6" fill="#3a9e8d" opacity="0.4" />
+          </svg>
+        </div>
+        <div class="pb">
+          <div class="ptag">Robotics · AI · Product Design</div>
+          <div class="pname">A.R.T.B</div>
+          <p class="pdesc">AI Multi Terrain Bot — a product design project covering hardware interface design, control
+            UI, and brand identity for an autonomous robot navigating diverse terrain types.</p>
+          <div class="parr">View Project <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg></div>
+        </div>
+      </div>
+      <div class="pc rv d3">
+        <div class="pa">
+          <svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <rect width="500" height="200" fill="#0f1e24" />
+            <rect x="28" y="30" width="108" height="140" rx="10" fill="none" stroke="#3a9e8d" stroke-width="1"
+              opacity="0.35" />
+            <rect x="44" y="52" width="76" height="7" rx="2" fill="#3a9e8d" opacity="0.2" />
+            <rect x="44" y="68" width="50" height="5" rx="2" fill="#3a9e8d" opacity="0.14" />
+            <rect x="44" y="88" width="76" height="27" rx="4" fill="#d4a84b" opacity="0.12" />
+            <rect x="44" y="128" width="34" height="5" rx="2" fill="#d4a84b" opacity="0.2" />
+            <text x="158" y="84" font-family="Georgia,serif" font-size="26" fill="#f0ece3" opacity="0.78"
+              font-weight="bold">EXPENDIGO</text>
+            <text x="158" y="108" font-family="sans-serif" font-size="9" fill="#3a9e8d" opacity="0.55"
+              letter-spacing="3">AI FINANCE TRACKER</text>
+            <path d="M370 152 Q398 82 426 112 Q454 142 476 68" fill="none" stroke="#d4a84b" stroke-width="1.8"
+              opacity="0.45" />
+            <circle cx="426" cy="112" r="4" fill="#d4a84b" opacity="0.5" />
+            <circle cx="476" cy="68" r="4" fill="#d4a84b" opacity="0.5" />
+          </svg>
+        </div>
+        <div class="pb">
+          <div class="ptag">Fintech · AI · UI/UX Design</div>
+          <div class="pname">EXPENDIGO</div>
+          <p class="pdesc">An AI-powered personal finance tracker with intelligent expense categorization, visual
+            analytics, and predictive budgeting — designed to build healthier financial habits.</p>
+          <div class="parr">View Project <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="div" />
+
+  <!-- ===== LEADERSHIP ===== -->
+  <section id="leadership">
+    <span class="eyebrow rv">Beyond the screen</span>
+    <h2 class="stitle rv d1">Leadership &amp; <em>qualities</em></h2>
+    <div class="lg">
+      <div class="lc rv d2">
+        <div class="l-role">Mentor</div>
+        <div class="l-org">Cybernaut Designathon</div>
+        <p class="l-desc">Mentored aspiring designers through a competitive designathon, providing guidance on design
+          thinking, visual problem-solving, and presenting work with confidence. Helped participants refine their
+          creative process.</p>
+      </div>
+      <div class="lc rv d3">
+        <div class="l-role">Co-Founder</div>
+        <div class="l-org">Dread Comrade Studio</div>
+        <p class="l-desc">Co-founded a creative design studio focused on delivering bold visual identities, motion
+          content, and digital experiences. Built the studio's creative direction and collaborative culture from the
+          ground up.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="div" />
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <span class="eyebrow rv">Let's connect</span>
+    <h2 class="stitle rv d1">Say <em>hello</em></h2>
+    <div class="cg">
+      <div>
+        <p class="ci-intro rv d2">Whether you have a project in mind, a design challenge to solve, or just want to talk
+          design — my inbox is always open. Let's create something remarkable together.</p>
+        <a href="mailto:shyamprasath@email.com" class="ci-link rv d3">
+          <div class="ci-ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.75">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg></div>
+          shyamprasath@email.com
+        </a>
+        <a href="tel:+919999999999" class="ci-link rv d4">
+          <div class="ci-ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.75">
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.66A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.15a16 16 0 006.94 6.94l1.52-1.52a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+            </svg></div>
+          +91 99999 99999
+        </a>
+        <a href="https://www.linkedin.com/in/shyam-prasath-a0914033b/" target="_blank" class="ci-link rv d5">
+        <div class="ci-ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
+        linkedin.com/in/shyam-prasath
+      </a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="fl">Shyam<span>.</span></div>
+    <div class="fr">Powered by Mech strek &copy; Shyam Prasath S</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -15,7 +15,7 @@
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body { font-family: 'Cabinet Grotesk', sans-serif; background: var(--cream); color: var(--ink); overflow-x: hidden; line-height: 1.6; }
+body { font-family: 'Cabinet Grotesk', sans-serif; background: linear-gradient(180deg, #fdf9f2 0%, #f0e7da 100%); color: var(--ink); overflow-x: hidden; line-height: 1.6; }
 ::selection { background: var(--teal); color: #fff; }
 a { color: inherit; text-decoration: none; }
 ul { list-style: none; }
@@ -41,6 +41,8 @@ nav.sc { background: rgba(240,236,227,.92); backdrop-filter: blur(16px); box-sha
 .n-links a.active { background: var(--teal); }
 .n-btn { margin-left: 14px; display: flex; align-items: center; gap: 8px; font-size: .8rem; font-weight: 800; border: 2px solid var(--ink); border-radius: 100px; padding: 8px 20px; transition: all .25s; }
 .n-btn:hover { background: var(--ink); color: var(--cream); }
+.n-resume { margin-left: 12px; display: inline-flex; align-items: center; justify-content: center; font-size: .8rem; font-weight: 800; border: 2px solid var(--ink); border-radius: 100px; padding: 8px 20px; transition: all .25s; color: var(--ink); }
+.n-resume:hover { background: var(--teal); border-color: var(--teal); color: #fff; }
 .hbg { display: none; background: none; border: none; cursor: pointer; color: var(--ink); margin-left: 10px; padding: 4px; }
 .mob { display: none; position: fixed; inset: 0; z-index: 999; background: var(--cream); flex-direction: column; align-items: center; justify-content: center; gap: 40px; }
 .mob.open { display: flex; }
@@ -48,17 +50,46 @@ nav.sc { background: rgba(240,236,227,.92); backdrop-filter: blur(16px); box-sha
 .mob a:hover { color: var(--teal); }
 
 /* ===== HERO ===== */
-#hero { min-height: 100vh; background: var(--cream); display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden; }
+#hero { min-height: 100vh; background: #ffffff; display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden; isolation: isolate; }
+
+/* Aurora background blobs */
+#hero::before {
+  content: '';
+  position: absolute;
+  top: -10vw; left: -10vw;
+  width: 45vw; height: 45vw;
+  background: radial-gradient(circle, rgba(238, 42, 144, 0.05) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+  animation: float1 14s infinite ease-in-out alternate;
+  pointer-events: none;
+}
+#hero::after {
+  content: '';
+  position: absolute;
+  bottom: -15vw; right: -10vw;
+  width: 55vw; height: 55vw;
+  background: radial-gradient(circle, rgba(58, 158, 141, 0.06) 0%, rgba(240, 230, 140, 0.03) 40%, transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+  animation: float2 18s infinite ease-in-out alternate;
+  pointer-events: none;
+}
+@keyframes float1 { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(10vw, 15vh) scale(1.15); } }
+@keyframes float2 { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(-10vw, -12vh) scale(1.1); } }
+
+/* Hero canvas */
+#hero-canvas { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; opacity: 0.45; }
+
+/* Scroll hint */
+.hero-scroll-hint { margin-top: clamp(1.5rem,4vh,3rem); font-family: 'Cabinet Grotesk', sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #aaa; opacity: 0.8; animation: hintBob 2.2s ease-in-out infinite; }
+@keyframes hintBob { 0%,100%{transform:translateY(0)} 50%{transform:translateY(7px)} }
 
 /* Giant Portfolio Text Layout */
-.h-bg-text { position: absolute; top: 48%; left: 50%; transform: translate(-50%, -50%); width: 100%; z-index: 1; text-align: center; }
+.h-bg-text { position: absolute; top: 48%; left: 50%; transform: translate(-50%, -50%); width: 100%; z-index: 10; text-align: center; }
 .giant-portfolio { font-family: 'Cabinet Grotesk', sans-serif; font-size: clamp(4rem, 16vw, 15rem); font-weight: 800; color: #000; line-height: 1; letter-spacing: -0.03em; margin-bottom: 2vh; }
 .subtitle-row { display: flex; justify-content: space-between; max-width: clamp(300px, 60vw, 900px); margin: 0 auto; padding: 0 5%; }
 .pink-script { font-family: 'Caveat', cursive; font-size: clamp(1.4rem, 3vw, 2.5rem); font-weight: 700; color: #ee2a90; }
-
-/* Hide Spline Logo */
-a[href*="spline.design"] { display: none !important; }
-canvas + div { display: none !important; } 
 
 .h-wrap { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr 1fr; min-height: calc(100vh - var(--nh)); padding: 0 clamp(20px,5vw,72px); align-items: center; }
 

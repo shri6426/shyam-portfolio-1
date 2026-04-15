@@ -30,6 +30,7 @@
     <a href="#projects" onclick="cm()">Projects</a>
     <a href="#leadership" onclick="cm()">Leadership</a>
     <a href="#contact" onclick="cm()">Contact</a>
+    <a href="Shyam Resume 1.pdf" download onclick="cm()">Resume</a>
   </div>
 
   <!-- NAV -->
@@ -41,14 +42,16 @@
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#leadership">Leadership</a>
+      <a href="#contact">Contact</a>
     </div>
     <a href="#contact" class="n-btn">
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
         <polyline points="22,6 12,13 2,6" />
       </svg>
-      Say Hello
+      Contact Me
     </a>
+    <a href="Shyam Resume 1.pdf" download class="n-resume">⬇ Resume</a>
     <button class="hbg" onclick="document.getElementById('mob').classList.toggle('open')">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <line x1="3" y1="6" x2="21" y2="6" />
@@ -60,6 +63,7 @@
 
   <!-- ===== HERO ===== -->
   <section id="hero" style="width: 100vw; height: 100vh; overflow: hidden; position: relative;">
+    <canvas id="hero-canvas"></canvas>
     <div class="h-bg-text">
        <h1 class="giant-portfolio">Portfolio</h1>
        <div class="subtitle-row">
@@ -135,7 +139,7 @@
             </svg></div>
           <div>
             <div class="ap-lbl">Tools of choice</div>
-            <div class="ap-val">Figma · Adobe Suite · DaVinci</div>
+            <div class="ap-val">Figma · Adobe Suite · Lightroom</div>
           </div>
         </div>
         <div class="apill rv d4">
@@ -216,8 +220,8 @@
           <li>Figma &amp; FigJam</li>
           <li>Adobe Photoshop &amp; Illustrator</li>
           <li>Premiere Pro &amp; After Effects</li>
-          <li>Canva &amp; DaVinci Resolve</li>
-          <li>Notion &amp; Linear</li>
+          <li>Adobe Lightroom</li>
+          <li>Canva &amp; Notion</li>
         </ul>
       </div>
     </div>
@@ -287,10 +291,6 @@
           <div class="pname">A.R.T.B</div>
           <p class="pdesc">AI Multi Terrain Bot — a product design project covering hardware interface design, control
             UI, and brand identity for an autonomous robot navigating diverse terrain types.</p>
-          <div class="parr">View Project <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2.5">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg></div>
         </div>
       </div>
       <div class="pc rv d3">
@@ -318,10 +318,6 @@
           <div class="pname">EXPENDIGO</div>
           <p class="pdesc">An AI-powered personal finance tracker with intelligent expense categorization, visual
             analytics, and predictive budgeting — designed to build healthier financial habits.</p>
-          <div class="parr">View Project <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2.5">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg></div>
         </div>
       </div>
     </div>
@@ -356,31 +352,35 @@
   <!-- ===== CONTACT ===== -->
   <section id="contact">
     <span class="eyebrow rv">Let's connect</span>
-    <h2 class="stitle rv d1">Say <em>hello</em></h2>
+    <h2 class="stitle rv d1">Contact <em>Me</em></h2>
     <div class="cg">
       <div>
         <p class="ci-intro rv d2">Whether you have a project in mind, a design challenge to solve, or just want to talk
           design — my inbox is always open. Let's create something remarkable together.</p>
-        <a href="mailto:shyamprasath@email.com" class="ci-link rv d3">
+        <a href="mailto:Shyamprasath20@gmail.com" class="ci-link rv d3">
           <div class="ci-ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="1.75">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
               <polyline points="22,6 12,13 2,6" />
             </svg></div>
-          shyamprasath@email.com
+          Shyamprasath20@gmail.com
         </a>
-        <a href="tel:+919999999999" class="ci-link rv d4">
+        <a href="tel:+917845763716" class="ci-link rv d4">
           <div class="ci-ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="1.75">
               <path
                 d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.66A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.15a16 16 0 006.94 6.94l1.52-1.52a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
             </svg></div>
-          +91 99999 99999
+          +91 78457 63716
         </a>
         <a href="https://www.linkedin.com/in/shyam-prasath-a0914033b/" target="_blank" class="ci-link rv d5">
         <div class="ci-ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
         linkedin.com/in/shyam-prasath
       </a>
+        <a href="Shyam Resume 1.pdf" download class="ci-link ci-resume rv d5" style="margin-top:10px; background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.25);">
+          <div class="ci-ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div>
+          Download Resume (PDF)
+        </a>
       </div>
     </div>
     </div>

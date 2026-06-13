@@ -87,7 +87,7 @@ nav.sc { background: rgba(240,236,227,.92); backdrop-filter: blur(16px); box-sha
 
 /* Giant Portfolio Text Layout */
 .h-bg-text { position: absolute; top: 48%; left: 50%; transform: translate(-50%, -50%); width: 100%; z-index: 10; text-align: center; }
-.giant-portfolio { font-family: 'Cabinet Grotesk', sans-serif; font-size: clamp(4rem, 16vw, 15rem); font-weight: 800; color: #000; line-height: 1; letter-spacing: -0.03em; margin-bottom: 2vh; }
+.giant-portfolio { font-family: 'Cabinet Grotesk', sans-serif; font-size: clamp(4rem, 16vw, 15rem); font-weight: 800; color: #000; line-height: 1; letter-spacing: -0.03em; margin-bottom: 2vh; text-transform: uppercase; }
 .subtitle-row { display: flex; justify-content: space-between; max-width: clamp(300px, 60vw, 900px); margin: 0 auto; padding: 0 5%; }
 .pink-script { font-family: 'Caveat', cursive; font-size: clamp(1.4rem, 3vw, 2.5rem); font-weight: 700; color: #ee2a90; }
 

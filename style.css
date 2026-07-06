@@ -13,7 +13,7 @@
   --r:      18px;
   --nh:     74px;
 }
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; cursor: none !important; }
 html { scroll-behavior: smooth; }
 body { font-family: 'Cabinet Grotesk', sans-serif; background: linear-gradient(180deg, #fdf9f2 0%, #f0e7da 100%); color: var(--ink); overflow-x: hidden; line-height: 1.6; }
 ::selection { background: var(--teal); color: #fff; }
